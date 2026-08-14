@@ -215,6 +215,33 @@
     fullAddress,
     renderPaymentBadges,
     renderCashbackPrompt,
+    renderAbout(containerId) {
+      const about = STORE.about;
+      const el = document.getElementById(containerId);
+      if (!about || !el) return;
+
+      const badge = about.badge;
+      const badgeEl = document.getElementById("about-badge-icon");
+      const badgeTextEl = document.getElementById("about-badge-text");
+      if (badge && badgeEl) badgeEl.textContent = badge.icon || "★";
+      if (badge && badgeTextEl && badge.lines?.length) {
+        badgeTextEl.innerHTML = badge.lines.join("<br />");
+      }
+
+      const body = about.paragraphs
+        .map((p, i) =>
+          i === 0
+            ? `<p class="about__lead">${p}</p>`
+            : `<p>${p}</p>`
+        )
+        .join("");
+
+      el.innerHTML = `
+        <p class="section__eyebrow">${about.eyebrow}</p>
+        <h2 class="section__title">${about.headline}</h2>
+        ${body}
+        ${about.closing ? `<p class="about__closing">${about.closing}</p>` : ""}`;
+    },
     renderPaymentMethods(containerId, compact) {
       const el = document.getElementById(containerId);
       if (el) el.innerHTML = renderPaymentBadges(compact);
@@ -574,6 +601,9 @@
   }
   if (document.getElementById("flyer-cashback-prompt")) {
     PHLS.renderCashbackPrompt("flyer-cashback-prompt");
+  }
+  if (document.getElementById("about-content")) {
+    PHLS.renderAbout("about-content");
   }
 
   window.PHLS.refreshReveal = initScrollReveal;

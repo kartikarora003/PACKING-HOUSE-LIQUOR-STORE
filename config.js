@@ -12,6 +12,25 @@ const STORE = {
   email: "packinghouseliquorstore@gmail.com",
   legalAge: 19,
 
+  about: {
+    eyebrow: "About Us",
+    headline: "Local Roots. Community Values. A Place to Feel Welcome.",
+    badge: {
+      icon: "★",
+      lines: ["Locally", "Owned", "Kelowna"],
+    },
+    paragraphs: [
+      "Welcome to The Packing House — a locally owned business built on a genuine appreciation for the Kelowna community.",
+      "The Packing House is proudly supported by a group of local owners who share a passion for this community and a belief in creating a welcoming, friendly place for our customers. While we each bring our own experiences and backgrounds to the business, we are united by the same values: family, hard work, connection, and giving back to the community we are fortunate to call home.",
+      "For some of us, Kelowna has been home since childhood. Others made their way here in the early 2010s and quickly fell in love with the Okanagan, building their lives and families here. Today, we are raising our children in Kelowna and are proud to be part of a community that has given us so many opportunities and memories.",
+      "As an Indo-Canadian owned business, family and community are especially important to us. We believe that a great local business should be more than a place to shop — it should be a place where people feel welcome, recognized, and valued.",
+      "Our goal at The Packing House is simple: to offer great service, a thoughtfully selected variety of products, and a friendly experience every time you visit.",
+      "We're proud to be local, proud to be part of Kelowna, and grateful for the opportunity to serve the people who make this community such a special place to live.",
+    ],
+    closing:
+      "Thank you for choosing local and for being part of The Packing House community.",
+  },
+
   address: {
     street: "663 Finns Rd",
     city: "Kelowna",

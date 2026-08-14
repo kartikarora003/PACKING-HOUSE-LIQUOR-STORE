@@ -772,7 +772,7 @@ strong {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
 }
 
 .about__visual {
@@ -861,6 +861,20 @@ strong {
   margin-bottom: 1.25rem;
   font-size: 1.05rem;
   line-height: 1.75;
+}
+
+.about__lead {
+  color: var(--color-text) !important;
+  font-size: 1.1rem !important;
+  font-weight: 500;
+}
+
+.about__closing {
+  color: var(--color-gold-light) !important;
+  font-weight: 500;
+  margin-bottom: 0 !important;
+  padding-top: 0.25rem;
+  border-top: 1px solid rgba(212, 175, 90, 0.2);
 }
 
 .about__text .btn {

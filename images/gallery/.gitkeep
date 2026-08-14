@@ -1,0 +1,4 @@
+Add your own store photos here to replace the stock images.
+
+Recommended: photos of your store front, shelves, products, team, etc.
+Save as JPG or PNG, then update paths in config.js under `gallery` and `heroImages`.

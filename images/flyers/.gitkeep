@@ -1,0 +1,8 @@
+Add your flyer images here:
+
+- flyer-1.jpg  (Weekly specials)
+- flyer-2.jpg  (Holiday / seasonal)
+
+Recommended size: 800×1100 px (portrait) or 1200×800 px (landscape)
+
+Then update the `flyers` array in config.js with your titles and filenames.

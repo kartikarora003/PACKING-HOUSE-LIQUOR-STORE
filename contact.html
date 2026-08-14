@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Packing House Liquor Store in Kelowna. Call (250) 765-0880, visit 663 Finns Rd, or send us a message." />
+    <title>Contact Us | Packing House Liquor Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/polish.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="contact">
+    <div id="age-gate" class="age-gate" role="dialog" aria-modal="true">
+      <div class="age-gate__backdrop"></div>
+      <div class="age-gate__card">
+        <div class="age-gate__brand">Packing House</div>
+        <div class="age-gate__divider"></div>
+        <h1 class="age-gate__title">Welcome</h1>
+        <p class="age-gate__text">You must be of legal drinking age in British Columbia to enter.</p>
+        <p class="age-gate__subtext">Are you 19 years of age or older?</p>
+        <div class="age-gate__actions">
+          <button id="age-yes" class="btn btn--primary btn--lg">Yes, I'm 19+</button>
+          <button id="age-no" class="btn btn--ghost">No, I'm not</button>
+        </div>
+      </div>
+    </div>
+    <div id="age-denied" class="age-denied hidden"><div class="age-denied__card"><h1>Sorry</h1><p>You must be 19 or older to view this website.</p></div></div>
+
+    <div id="site" class="site hidden">
+      <div id="site-nav"></div>
+
+      <main>
+        <section class="page-hero page-hero--contact">
+          <div class="page-hero__overlay"></div>
+          <div class="container page-hero__content">
+            <p class="section__eyebrow reveal">Get in Touch</p>
+            <h1 class="page-hero__title reveal reveal--delay-1">Contact Us</h1>
+            <p class="page-hero__subtitle reveal reveal--delay-2">We'd love to hear from you — visit, call, or send a message.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container contact-page__grid">
+            <div class="contact-page__info reveal">
+              <div class="contact-cards-stack">
+                <a class="contact__card" href="tel:2507650880">
+                  <span class="contact__card-label">Phone</span>
+                  <span class="contact__card-value">(250) 765-0880</span>
+                </a>
+                <a class="contact__card" id="email-card" href="mailto:packinghouseliquorstore@gmail.com">
+                  <span class="contact__card-label">Email</span>
+                  <span class="contact__card-value">packinghouseliquorstore@gmail.com</span>
+                </a>
+                <a class="contact__card" id="instagram-card" href="#" target="_blank" rel="noopener">
+                  <span class="contact__card-label">Instagram</span>
+                  <span class="contact__card-value">@packinghouseliquorstore</span>
+                </a>
+                <a class="contact__card" id="facebook-card" href="#" target="_blank" rel="noopener">
+                  <span class="contact__card-label">Facebook</span>
+                  <span class="contact__card-value">@packinghouseliquorstore</span>
+                </a>
+              </div>
+
+              <div class="info-block info-block--card">
+                <div class="info-block__icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <h3>Store Hours</h3>
+                <ul class="hours-list" id="hours-list"></ul>
+              </div>
+
+              <div class="info-block info-block--card" id="contact-loyalty"></div>
+
+              <div class="info-block info-block--card" id="contact-payments"></div>
+
+              <div class="info-block info-block--card">
+                <div class="info-block__icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h3>Address</h3>
+                <address>663 Finns Rd<br>Kelowna, BC V1X 5B7</address>
+                <a id="directions-link" class="btn btn--primary btn--full" href="#" target="_blank" rel="noopener">Get Directions</a>
+              </div>
+            </div>
+
+            <form class="contact-form reveal reveal--delay-1" id="contact-form" novalidate>
+              <h3 class="contact-form__heading">Send a Message</h3>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full btn--lg">Send Message</button>
+              <p class="form-success hidden" id="form-success" role="status">Thanks! Your message has been sent.</p>
+            </form>
+          </div>
+        </section>
+
+        <!-- Google Map -->
+        <section class="section section--compact">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section__eyebrow">Find Us</p>
+              <h2 class="section__title section__title--center">Our Location</h2>
+            </div>
+            <div class="hours__map reveal">
+              <iframe id="map-iframe" title="Packing House Liquor Store on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Customer Reviews -->
+        <section id="reviews" class="section customer-reviews">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section__eyebrow">Testimonials</p>
+              <h2 class="section__title section__title--center">What Our Customers Say</h2>
+              <p class="section__subtitle">Real feedback from our Kelowna community.</p>
+            </div>
+            <div id="reviews-summary" class="reviews-summary reveal"></div>
+            <div id="reviews-grid" class="reviews-grid"></div>
+            <div class="reviews-cta reveal">
+              <a id="google-reviews-btn" class="btn btn--primary btn--lg" href="#" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                Read All on Google
+              </a>
+              <a id="google-write-btn" class="btn btn--outline btn--lg" href="#" target="_blank" rel="noopener">Leave a Review</a>
+              <a id="google-maps-btn" class="btn btn--ghost btn--lg" href="#" target="_blank" rel="noopener">Open in Google Maps</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="site-footer"></div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="js/shared.js"></script>
+    <script>
+      PHLS.renderHoursList("hours-list");
+      PHLS.initContactForm("contact-form", "form-success");
+      PHLS.renderReviews("reviews-summary", "reviews-grid");
+      document.getElementById("map-iframe").src = STORE.mapEmbedUrl;
+      document.getElementById("directions-link").href = STORE.googleMapsUrl;
+      document.getElementById("instagram-card").href = STORE.social.instagram;
+      document.getElementById("facebook-card").href = STORE.social.facebook;
+      document.getElementById("google-reviews-btn").href = STORE.googleReviewsUrl;
+      document.getElementById("google-write-btn").href = STORE.googleReviewsUrl;
+      document.getElementById("google-maps-btn").href = STORE.googleMapsUrl;
+    </script>
+  </body>
+</html>

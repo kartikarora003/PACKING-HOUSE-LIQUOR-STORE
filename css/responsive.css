@@ -1,0 +1,519 @@
+/* ============================================================
+   Responsive — Laptop, Tablet & Phone
+   ============================================================ */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  padding-left: env(safe-area-inset-left, 0);
+  padding-right: env(safe-area-inset-right, 0);
+}
+
+body.nav-open {
+  overflow: hidden;
+}
+
+.site {
+  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+iframe {
+  max-width: 100%;
+  border: 0;
+}
+
+.btn {
+  min-height: 44px;
+}
+
+/* ===== Laptop (769px – 1280px) ===== */
+@media (min-width: 769px) and (max-width: 1280px) {
+  .container {
+    width: min(1140px, 90vw);
+  }
+
+  .hero__layout {
+    gap: 2rem;
+  }
+}
+
+/* ===== Tablet (≤1024px) ===== */
+@media (max-width: 1024px) {
+  .info-bar__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 1.5rem;
+    padding: 1.75rem;
+  }
+
+  .info-bar__divider {
+    display: none;
+  }
+
+  .contact-page__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .about__grid {
+    gap: 2.5rem;
+  }
+}
+
+/* ===== Tablet portrait (≤900px) ===== */
+@media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero__layout {
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .hours-week-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* ===== Phone (≤768px) ===== */
+@media (max-width: 768px) {
+  .container {
+    width: min(1140px, 94vw);
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2.25rem;
+  }
+
+  .section__subtitle {
+    font-size: 0.95rem;
+    padding-inline: 0.25rem;
+  }
+
+  .header {
+    z-index: 300;
+  }
+
+  .nav__links {
+    z-index: 250;
+    max-height: calc(100dvh - 4.5rem);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero__layout {
+    padding-top: 5.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero__content {
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  .hero__title-line {
+    font-size: clamp(2.25rem, 10vw, 3.5rem);
+  }
+
+  .hero__tagline {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .hero__social {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .payment-strip,
+  .loyalty-strip {
+    padding-inline: 0;
+  }
+
+  .payment-methods {
+    padding: 1.25rem 1rem;
+  }
+
+  .payment-methods__badges {
+    gap: 0.45rem;
+  }
+
+  .payment-badge {
+    font-size: 0.65rem;
+    padding: 0.35rem 0.65rem;
+  }
+
+  .payment-methods--compact {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .loyalty-banner {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .loyalty-banner__main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .loyalty-banner__rate {
+    font-size: 3rem;
+  }
+
+  .loyalty-banner__title {
+    font-size: 1.35rem;
+  }
+
+  .loyalty-banner__desc {
+    font-size: 0.92rem;
+  }
+
+  .offers-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .offers-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .offers-cta .btn {
+    width: 100%;
+  }
+
+  .offer-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .showcase__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-card__image {
+    height: 220px;
+  }
+
+  .hours-week-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 1rem;
+    gap: 0.75rem !important;
+  }
+
+  .hours-day--today {
+    transform: none !important;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .reviews-summary {
+    padding: 1.5rem 1.25rem;
+    gap: 1.25rem;
+  }
+
+  .reviews-summary__number {
+    font-size: 3rem;
+  }
+
+  .reviews-summary__score {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .reviews-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .reviews-cta .btn {
+    width: 100%;
+  }
+
+  .review-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .age-gate__card {
+    margin: 1rem;
+    padding: 2rem 1.25rem;
+    width: calc(100% - 2rem);
+  }
+
+  .age-gate__title {
+    font-size: 2rem;
+  }
+
+  .age-gate__actions .btn {
+    width: 100%;
+  }
+
+  .page-hero {
+    min-height: 260px;
+  }
+
+  .page-hero__content {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  .page-hero__title {
+    font-size: clamp(2rem, 8vw, 2.75rem);
+  }
+
+  .contact-form {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .contact-cards-stack {
+    gap: 0.75rem;
+  }
+
+  .contact__card {
+    padding: 1rem 1.15rem;
+  }
+
+  .delivery-cards--three {
+    grid-template-columns: 1fr !important;
+  }
+
+  .delivery-card {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .delivery-addon {
+    bottom: calc(0.65rem + env(safe-area-inset-bottom, 0px));
+    width: 96vw;
+  }
+
+  .delivery-addon__inner {
+    flex-wrap: wrap;
+    border-radius: var(--radius-lg) !important;
+    padding: 0.85rem 1rem !important;
+    gap: 0.75rem;
+  }
+
+  .delivery-addon__actions {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .delivery-addon__btn {
+    min-height: 40px;
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .delivery-addon__text span {
+    display: none;
+  }
+
+  .footer {
+    padding: 2.5rem 0;
+  }
+
+  .footer__grid {
+    gap: 2rem;
+  }
+
+  .footer__payments {
+    padding-inline: 0.25rem;
+  }
+
+  .footer__credit {
+    font-size: 0.72rem;
+    line-height: 1.65;
+    padding-inline: 0.5rem;
+  }
+
+  .monthly-flyers__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .months-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .archive-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .current-flyer {
+    padding: 1.25rem;
+  }
+
+  .photo-strip__item {
+    width: 200px;
+    height: 130px;
+  }
+
+  .about__visual {
+    min-height: 280px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr !important;
+    grid-auto-rows: 140px !important;
+  }
+
+  .social-section__grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+/* ===== Small phone (≤480px) ===== */
+@media (max-width: 480px) {
+  .container {
+    width: min(1140px, 96vw);
+  }
+
+  .nav__logo-main {
+    font-size: 1.1rem;
+  }
+
+  .nav__logo-sub {
+    font-size: 0.58rem;
+  }
+
+  .info-bar__grid {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+  }
+
+  .info-bar__value {
+    font-size: 0.92rem;
+    word-break: break-word;
+  }
+
+  .hours-week-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hours-day {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 1rem 1.15rem !important;
+    gap: 0.75rem;
+  }
+
+  .hours-day__abbr {
+    margin: 0;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+  }
+
+  .hours-day__name {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 0 !important;
+  }
+
+  .hours-day__time {
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .hours-day__badge {
+    position: static;
+    margin-top: 0;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: 200px !important;
+  }
+
+  .gallery__item:nth-child(n) {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  .months-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero__badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+  }
+
+  .payment-badge {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.55rem;
+  }
+
+  .loyalty-banner__rate {
+    font-size: 2.5rem;
+  }
+
+  .delivery-addon__btn {
+    font-size: 0.68rem;
+    padding: 0.45rem 0.6rem;
+  }
+
+  .btn--lg {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.88rem;
+  }
+
+  .current-flyer__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .current-flyer__actions .btn {
+    width: 100%;
+  }
+
+  .cashback-prompt-bar {
+    flex-wrap: wrap;
+    padding: 0.65rem 1rem;
+    gap: 0.65rem;
+  }
+
+  .cashback-prompt-bar__text {
+    font-size: 0.8rem;
+    flex: 1 1 100%;
+    order: 3;
+  }
+
+  .cashback-prompt {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

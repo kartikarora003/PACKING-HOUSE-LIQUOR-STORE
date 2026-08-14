@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Packing House Liquor Store — Kelowna's liquor store at 663 Finns Rd. Delivery via DoorDash, Uber Eats & private delivery."
+    />
+    <title>Packing House Liquor Store | Kelowna, BC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/polish.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="home">
+    <div id="age-gate" class="age-gate" role="dialog" aria-modal="true">
+      <div class="age-gate__backdrop"></div>
+      <div class="age-gate__card">
+        <div class="age-gate__brand">Packing House</div>
+        <div class="age-gate__divider"></div>
+        <h1 class="age-gate__title">Welcome</h1>
+        <p class="age-gate__text">You must be of legal drinking age in British Columbia to enter.</p>
+        <p class="age-gate__subtext">Are you 19 years of age or older?</p>
+        <div class="age-gate__actions">
+          <button id="age-yes" class="btn btn--primary btn--lg">Yes, I'm 19+</button>
+          <button id="age-no" class="btn btn--ghost">No, I'm not</button>
+        </div>
+      </div>
+    </div>
+    <div id="age-denied" class="age-denied hidden">
+      <div class="age-denied__card">
+        <h1>Sorry</h1>
+        <p>You must be 19 or older to view this website.</p>
+      </div>
+    </div>
+
+    <div id="site" class="site hidden">
+      <div id="site-nav"></div>
+
+      <main>
+        <section class="hero">
+          <div class="hero__bg"></div>
+          <div class="hero__overlay"></div>
+          <div class="hero__glow"></div>
+          <div class="container hero__layout">
+            <div class="hero__content">
+              <div class="hero__badge reveal"><span class="hero__badge-dot"></span>Kelowna, British Columbia</div>
+              <h1 class="hero__title reveal reveal--delay-1">
+                <span class="hero__title-line">Packing House</span>
+                <span class="hero__title-line hero__title-line--accent">Liquor Store</span>
+              </h1>
+              <p class="hero__tagline reveal reveal--delay-2">Kelowna's destination for fine wines, premium spirits & craft beer</p>
+              <div class="hero__actions reveal reveal--delay-3">
+                <a href="flyers.html" class="btn btn--primary btn--lg">View Flyers</a>
+                <a href="delivery.html" class="btn btn--outline btn--lg">Order Delivery</a>
+              </div>
+              <div class="hero__social reveal reveal--delay-3">
+                <a id="hero-instagram" class="hero__social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a id="hero-facebook" class="hero__social-link" href="https://www.facebook.com/profile.php?id=61584401080678" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="hero__photos">
+              <div class="hero__photo hero__photo--1"></div>
+              <div class="hero__photo hero__photo--2"></div>
+              <div class="hero__photo hero__photo--3"></div>
+            </div>
+          </div>
+          <div class="hero__scroll" aria-hidden="true"><span>Scroll</span><div class="hero__scroll-line"></div></div>
+        </section>
+
+        <section class="info-bar">
+          <div class="container info-bar__grid">
+            <div class="info-bar__item reveal">
+              <span class="info-bar__label">Location</span>
+              <span class="info-bar__value" id="info-address"></span>
+            </div>
+            <div class="info-bar__divider"></div>
+            <div class="info-bar__item reveal reveal--delay-1">
+              <span class="info-bar__label">Phone</span>
+              <a class="info-bar__value info-bar__link" id="info-phone" href="#"></a>
+            </div>
+            <div class="info-bar__divider"></div>
+            <div class="info-bar__item reveal reveal--delay-2">
+              <span class="info-bar__label">Open Today</span>
+              <span class="info-bar__value" id="info-hours"></span>
+            </div>
+            <div class="info-bar__divider"></div>
+            <div class="info-bar__item reveal reveal--delay-3">
+              <span class="info-bar__label">Delivery</span>
+              <a class="info-bar__value info-bar__link" href="delivery.html">We Deliver →</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="payment-strip">
+          <div class="container">
+            <div id="payment-methods" class="reveal"></div>
+          </div>
+        </section>
+
+        <section id="loyalty" class="loyalty-strip">
+          <div class="container">
+            <div id="loyalty-banner" class="reveal"></div>
+          </div>
+        </section>
+
+        <section id="offers" class="section offers-section">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section__eyebrow">Deals & Savings</p>
+              <h2 class="section__title section__title--center">Current Offers</h2>
+              <p class="section__subtitle">
+                Visit us in store for more exciting offers — new deals every week!
+              </p>
+            </div>
+            <div id="offers-grid" class="offers-grid"></div>
+            <p class="offers-cta reveal">
+              <a href="flyers.html" class="btn btn--primary">View Monthly Flyers</a>
+              <a id="offers-call" href="#" class="btn btn--outline">Call the Store</a>
+            </p>
+          </div>
+        </section>
+
+        <div class="photo-strip" aria-hidden="true">
+          <div class="photo-strip__track" id="photo-strip-track"></div>
+        </div>
+
+        <section id="about" class="section about">
+          <div class="container about__grid">
+            <div class="about__visual reveal">
+              <div class="about__image"></div>
+              <div class="about__float about__float--1"></div>
+              <div class="about__float about__float--2"></div>
+              <div class="about__badge">
+                <span class="about__badge-number">★</span>
+                <span class="about__badge-text">Kelowna's<br />Neighbourhood<br />Liquor Store</span>
+              </div>
+            </div>
+            <div class="about__text reveal reveal--delay-1">
+              <p class="section__eyebrow">About Us</p>
+              <h2 class="section__title">Your Local Store on Finns Rd</h2>
+              <p>At <strong>Packing House Liquor Store</strong>, we're proud to serve Kelowna from our store on Finns Rd — cold beer, wine & spirits, with friendly service and great selection.</p>
+              <p>Look for us on Finns Rd with the big LIQUOR STORE sign. Stop in, call for private delivery, or order through DoorDash & Uber Eats.</p>
+              <div class="about__actions">
+                <a id="about-call" href="#" class="btn btn--primary">Call (250) 765-0880</a>
+                <a href="contact.html" class="btn btn--outline">Get Directions</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="hours" class="section store-hours-section">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section__eyebrow">Visit Us</p>
+              <h2 class="section__title section__title--center">Store Hours</h2>
+              <p class="section__subtitle" id="hours-subtitle">Open 7 days a week</p>
+            </div>
+            <div id="hours-grid" class="hours-week-grid"></div>
+            <p class="store-hours-note reveal">
+              <a href="contact.html" class="btn btn--outline">Get Directions</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section quick-actions">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section__eyebrow">Explore</p>
+              <h2 class="section__title section__title--center">Everything You Need</h2>
+            </div>
+            <div class="action-grid">
+              <a href="flyers.html" class="action-card reveal">
+                <div class="action-card__icon action-card__icon--flyer">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                  </svg>
+                </div>
+                <h3>Monthly Flyers</h3>
+                <p>Browse deals & specials for every month</p>
+                <span class="action-card__link">View Flyers →</span>
+              </a>
+              <a href="delivery.html" class="action-card reveal reveal--delay-1">
+                <div class="action-card__icon action-card__icon--delivery">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="3" width="15" height="13" />
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                    <circle cx="5.5" cy="18.5" r="2.5" />
+                    <circle cx="18.5" cy="18.5" r="2.5" />
+                  </svg>
+                </div>
+                <h3>Delivery</h3>
+                <p>DoorDash, Uber Eats, or private delivery — call the store (4 PM – 11 PM)</p>
+                <span class="action-card__link">Order Now →</span>
+              </a>
+              <a href="contact.html" class="action-card reveal reveal--delay-2">
+                <div class="action-card__icon action-card__icon--contact">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <h3>Visit Us</h3>
+                <p>Hours, directions & store location</p>
+                <span class="action-card__link">Find Us →</span>
+              </a>
+              <a href="contact.html#reviews" class="action-card reveal reveal--delay-3">
+                <div class="action-card__icon action-card__icon--reviews">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    />
+                  </svg>
+                </div>
+                <h3>Google Reviews</h3>
+                <p>See what customers are saying about us</p>
+                <span class="action-card__link">Read Reviews →</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="delivery-banner">
+          <div class="container delivery-banner__inner reveal">
+            <div class="delivery-banner__text">
+              <p class="section__eyebrow">We Deliver</p>
+              <h2 class="delivery-banner__title">DoorDash · Uber Eats · Private Delivery</h2>
+              <p id="delivery-banner-text">Order through apps or call us for private delivery in Kelowna. Open daily 9 AM – 11 PM.</p>
+            </div>
+            <div class="delivery-banner__buttons">
+              <a href="delivery.html" class="btn btn--doordash btn--lg">DoorDash</a>
+              <a href="delivery.html" class="btn btn--ubereats btn--lg">Uber Eats</a>
+              <a id="delivery-call" href="#" class="btn btn--primary btn--lg">Call for Private Delivery</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section showcase">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section__eyebrow">What We Offer</p>
+              <h2 class="section__title section__title--center">Curated for Every Occasion</h2>
+              <p class="section__subtitle">Visit us in store for wine, spirits, beer, vapes & more.</p>
+            </div>
+            <div id="showcase-grid" class="showcase__grid"></div>
+          </div>
+        </section>
+
+        <section class="section gallery-section">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section__eyebrow">Inside the Store</p>
+              <h2 class="section__title section__title--center">A Look at What We Offer</h2>
+              <p class="section__subtitle">Premium wines, spirits, craft beer & local Okanagan favourites — all under one roof.</p>
+            </div>
+            <div id="gallery-grid" class="gallery"></div>
+          </div>
+        </section>
+
+        <section class="section social-section">
+          <div class="container social-section__inner reveal">
+            <div class="social-section__content">
+              <p class="section__eyebrow">Follow Us</p>
+              <h2 class="section__title">Stay Connected</h2>
+              <p>New arrivals, weekly deals, events & store updates — follow us on Instagram and Facebook.</p>
+              <div class="social-section__buttons">
+                <a id="instagram-cta" class="btn btn--instagram btn--lg" href="#" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  </svg>
+                  @packinghouseliquorstore
+                </a>
+                <a id="facebook-cta" class="btn btn--facebook btn--lg" href="#" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                  </svg>
+                  @packinghouseliquorstore
+                </a>
+              </div>
+            </div>
+            <div class="social-section__grid">
+              <a id="social-tile-1" class="social-tile social-tile--1" href="#" target="_blank" rel="noopener"></a>
+              <a id="social-tile-2" class="social-tile social-tile--2" href="#" target="_blank" rel="noopener"></a>
+              <a id="social-tile-3" class="social-tile social-tile--3" href="#" target="_blank" rel="noopener"></a>
+              <a id="social-tile-4" class="social-tile social-tile--4" href="#" target="_blank" rel="noopener"></a>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" class="section customer-reviews">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section__eyebrow">Testimonials</p>
+              <h2 class="section__title section__title--center">What Our Customers Say</h2>
+              <p class="section__subtitle">Loved by the Kelowna community — here's what people are saying about Packing House Liquor Store.</p>
+            </div>
+            <div id="reviews-summary" class="reviews-summary reveal"></div>
+            <div id="reviews-grid" class="reviews-grid"></div>
+            <div class="reviews-cta reveal">
+              <a id="reviews-read" class="btn btn--primary btn--lg" href="#" target="_blank" rel="noopener">
+                Read All on Google
+              </a>
+              <a id="reviews-write" class="btn btn--outline btn--lg" href="#" target="_blank" rel="noopener">
+                Leave a Review
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="site-footer"></div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="js/shared.js"></script>
+    <script>
+      const digits = STORE.phone.replace(/\D/g, "");
+      const shortAddr = `${STORE.address.street}, ${STORE.address.city}`;
+
+      document.getElementById("info-hours").textContent = PHLS.getTodayHours();
+      document.getElementById("info-address").textContent = shortAddr;
+      document.getElementById("info-phone").textContent = STORE.phone;
+      document.getElementById("info-phone").href = `tel:${digits}`;
+      document.getElementById("hours-subtitle").textContent =
+        `Open 7 days a week at ${STORE.address.street}, ${STORE.address.city}`;
+
+      ["offers-call", "about-call", "delivery-call"].forEach((id) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.href = `tel:${digits}`;
+        if (id === "offers-call") el.textContent = `Call ${STORE.phone}`;
+        if (id === "about-call") el.textContent = `Call ${STORE.phone}`;
+      });
+
+      document.getElementById("instagram-cta").href = STORE.social.instagram;
+      document.getElementById("facebook-cta").href = STORE.social.facebook;
+      document.getElementById("hero-instagram").href = STORE.social.instagram;
+      document.getElementById("hero-facebook").href = STORE.social.facebook;
+      document.getElementById("reviews-read").href = STORE.googleReviewsUrl;
+      document.getElementById("reviews-write").href = STORE.googleReviewsUrl;
+      document.getElementById("delivery-banner-text").textContent =
+        `DoorDash & Uber Eats anytime we're open. Private in-store delivery ${STORE.delivery.private.hours} daily — call ${STORE.delivery.private.phone}.`;
+
+      PHLS.renderOffers("offers-grid");
+      PHLS.renderHoursGrid("hours-grid");
+      PHLS.renderGallery("gallery-grid");
+      PHLS.renderReviews("reviews-summary", "reviews-grid");
+
+      ["social-tile-1", "social-tile-2", "social-tile-3", "social-tile-4"].forEach((id) => {
+        document.getElementById(id).href = STORE.social.instagram;
+      });
+    </script>
+  </body>
+</html>

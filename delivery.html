@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Delivery from Packing House Liquor Store — DoorDash, Uber Eats & private delivery. Call (250) 765-0880. Kelowna, BC." />
+
+    <title>Delivery | Packing House Liquor Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/polish.css" />
+
+    <link rel="stylesheet" href="css/responsive.css" />
+
+  </head>
+
+  <body data-page="delivery">
+
+    <div id="age-gate" class="age-gate" role="dialog" aria-modal="true">
+
+      <div class="age-gate__backdrop"></div>
+
+      <div class="age-gate__card">
+
+        <div class="age-gate__brand">Packing House</div>
+
+        <div class="age-gate__divider"></div>
+
+        <h1 class="age-gate__title">Welcome</h1>
+
+        <p class="age-gate__text">You must be of legal drinking age in British Columbia to enter.</p>
+
+        <p class="age-gate__subtext">Are you 19 years of age or older?</p>
+
+        <div class="age-gate__actions">
+
+          <button id="age-yes" class="btn btn--primary btn--lg">Yes, I'm 19+</button>
+
+          <button id="age-no" class="btn btn--ghost">No, I'm not</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="age-denied" class="age-denied hidden"><div class="age-denied__card"><h1>Sorry</h1><p>You must be 19 or older to view this website.</p></div></div>
+
+
+
+    <div id="site" class="site hidden">
+
+      <div id="site-nav"></div>
+
+
+
+      <main>
+
+        <section class="page-hero page-hero--delivery">
+
+          <div class="page-hero__overlay"></div>
+
+          <div class="container page-hero__content">
+
+            <p class="section__eyebrow reveal">We Deliver</p>
+
+            <h1 class="page-hero__title reveal reveal--delay-1">3 Ways to Get Delivery</h1>
+
+            <p class="page-hero__subtitle reveal reveal--delay-2">DoorDash, Uber Eats, or private delivery — call our store to arrange (4 PM – 11 PM).</p>
+
+          </div>
+
+        </section>
+
+
+
+        <section class="section">
+
+          <div class="container">
+
+            <div class="delivery-cards delivery-cards--three">
+
+              <article class="delivery-card reveal" id="doordash-card">
+
+                <div class="delivery-card__logo delivery-card__logo--doordash">
+
+                  <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H8l5-9v4h3l-5 9z"/></svg>
+
+                </div>
+
+                <h2>DoorDash</h2>
+
+                <p>Order wine, spirits & beer through DoorDash. Fast delivery across Kelowna.</p>
+
+                <ul class="delivery-card__features">
+
+                  <li>Order in the DoorDash app</li>
+
+                  <li>Track your delivery live</li>
+
+                  <li>Full store selection</li>
+
+                </ul>
+
+                <a id="doordash-link" class="btn btn--doordash btn--lg btn--full" href="#" target="_blank" rel="noopener">Order on DoorDash</a>
+
+              </article>
+
+
+
+              <article class="delivery-card reveal reveal--delay-1" id="ubereats-card">
+
+                <div class="delivery-card__logo delivery-card__logo--ubereats">
+
+                  <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+
+                </div>
+
+                <h2>Uber Eats</h2>
+
+                <p>Browse and order through Uber Eats — delivered right to your door.</p>
+
+                <ul class="delivery-card__features">
+
+                  <li>Easy in-app ordering</li>
+
+                  <li>Real-time tracking</li>
+
+                  <li>Secure payment</li>
+
+                </ul>
+
+                <a id="ubereats-link" class="btn btn--ubereats btn--lg btn--full" href="#" target="_blank" rel="noopener">Order on Uber Eats</a>
+
+              </article>
+
+
+
+              <article class="delivery-card delivery-card--featured reveal reveal--delay-2" id="private-card">
+
+                <div class="delivery-card__logo delivery-card__logo--private">
+
+                  <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+
+                </div>
+
+                <span class="delivery-card__tag">Call the Store</span>
+
+                <h2>Private Delivery</h2>
+
+                <p id="private-desc">Call us directly and we'll arrange private delivery to your door in Kelowna.</p>
+
+                <ul class="delivery-card__features">
+
+                  <li>Speak with our team directly</li>
+
+                  <li id="private-hours">Available 4:00 PM – 11:00 PM daily</li>
+
+                  <li>Flexible delivery options</li>
+
+                  <li>Perfect for larger orders</li>
+
+                </ul>
+
+                <a id="private-phone-link" class="btn btn--primary btn--lg btn--full" href="tel:2507650880">
+
+                  Call (250) 765-0880
+
+                </a>
+
+              </article>
+
+            </div>
+
+
+
+            <div class="delivery-info reveal">
+
+              <h3>Prefer to shop in store?</h3>
+
+              <p>Visit us at 663 Finns Rd, Kelowna — <strong>open daily 9 AM – 11 PM</strong>. Private in-store delivery is available <strong id="private-delivery-hours">4:00 PM – 11:00 PM</strong>. Must be 19+ with valid ID for all alcohol purchases and deliveries.</p>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+
+
+
+      <div id="site-footer"></div>
+
+    </div>
+
+
+
+    <script src="config.js"></script>
+
+    <script src="js/shared.js"></script>
+
+    <script>
+
+      document.getElementById("doordash-link").href = STORE.delivery.doordash.url;
+
+      document.getElementById("ubereats-link").href = STORE.delivery.ubereats.url;
+
+      document.getElementById("private-desc").textContent = STORE.delivery.private.description;
+
+      document.getElementById("private-hours").textContent =
+        `Available ${STORE.delivery.private.hours} daily`;
+
+      document.getElementById("private-delivery-hours").textContent =
+        STORE.delivery.private.hours;
+
+      document.getElementById("private-phone-link").href = "tel:" + STORE.phone.replace(/\D/g, "");
+
+      document.getElementById("private-phone-link").textContent = "Call " + STORE.delivery.private.phone;
+
+    </script>
+
+  </body>
+
+</html>
+
+

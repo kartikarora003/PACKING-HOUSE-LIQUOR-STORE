@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Current monthly flyer and specials at Packing House Liquor Store in Kelowna, BC." />
+    <title>Monthly Flyer | Packing House Liquor Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/polish.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="flyers">
+    <div id="age-gate" class="age-gate" role="dialog" aria-modal="true">
+      <div class="age-gate__backdrop"></div>
+      <div class="age-gate__card">
+        <div class="age-gate__brand">Packing House</div>
+        <div class="age-gate__divider"></div>
+        <h1 class="age-gate__title">Welcome</h1>
+        <p class="age-gate__text">You must be of legal drinking age in British Columbia to enter.</p>
+        <p class="age-gate__subtext">Are you 19 years of age or older?</p>
+        <div class="age-gate__actions">
+          <button id="age-yes" class="btn btn--primary btn--lg">Yes, I'm 19+</button>
+          <button id="age-no" class="btn btn--ghost">No, I'm not</button>
+        </div>
+      </div>
+    </div>
+    <div id="age-denied" class="age-denied hidden"><div class="age-denied__card"><h1>Sorry</h1><p>You must be 19 or older to view this website.</p></div></div>
+
+    <div id="site" class="site hidden">
+      <div id="site-nav"></div>
+
+      <main>
+        <section class="page-hero page-hero--flyers">
+          <div class="page-hero__overlay"></div>
+          <div class="container page-hero__content">
+            <p class="section__eyebrow reveal">Deals & Promotions</p>
+            <h1 class="page-hero__title reveal reveal--delay-1">This Month's Flyer</h1>
+            <p class="page-hero__subtitle reveal reveal--delay-2">Current specials — updated every month.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container container--narrow">
+            <div id="current-flyer" class="reveal"></div>
+            <div id="flyer-cashback-prompt" class="reveal reveal--delay-1"></div>
+          </div>
+        </section>
+      </main>
+
+      <div id="site-footer"></div>
+    </div>
+
+    <div id="flyer-lightbox" class="lightbox hidden" role="dialog" aria-modal="true">
+      <button class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
+      <img id="lightbox-img" src="" alt="Flyer" />
+      <p id="lightbox-caption" class="lightbox__caption"></p>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="js/shared.js"></script>
+    <script src="js/flyers.js"></script>
+  </body>
+</html>

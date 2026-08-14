@@ -20,12 +20,12 @@ const STORE = {
       lines: ["Locally", "Owned", "Kelowna"],
     },
     paragraphs: [
-      "Welcome to The Packing House — a locally owned business built on a genuine appreciation for the Kelowna community.",
-      "The Packing House is proudly supported by a group of local owners who share a passion for this community and a belief in creating a welcoming, friendly place for our customers. While we each bring our own experiences and backgrounds to the business, we are united by the same values: family, hard work, connection, and giving back to the community we are fortunate to call home.",
-      "For some of us, Kelowna has been home since childhood. Others made their way here in the early 2010s and quickly fell in love with the Okanagan, building their lives and families here. Today, we are raising our children in Kelowna and are proud to be part of a community that has given us so many opportunities and memories.",
-      "As an Indo-Canadian owned business, family and community are especially important to us. We believe that a great local business should be more than a place to shop — it should be a place where people feel welcome, recognized, and valued.",
-      "Our goal at The Packing House is simple: to offer great service, a thoughtfully selected variety of products, and a friendly experience every time you visit.",
-      "We're proud to be local, proud to be part of Kelowna, and grateful for the opportunity to serve the people who make this community such a special place to live.",
+      "Welcome to The Packing House — a locally owned business with deep roots in the Kelowna community.",
+      "The Packing House was built by a group of local owners who share a genuine appreciation for this community and a passion for creating a welcoming place for our customers. We each bring our own experiences and perspectives to the business, but we are united by the values that matter most to us: family, hard work, connection, and community.",
+      "For some of us, Kelowna has been home for generations of memories. We've grown up here, built our families here, and watched this community evolve into the vibrant place it is today. We're proud to be raising our children in Kelowna and to be part of the community we call home.",
+      "Family and community are at the heart of what we believe in. We believe a local business should be more than simply a place to shop — it should be a place where people feel welcome, appreciated, and connected.",
+      "At The Packing House, our goal is simple: to provide great service, a thoughtfully selected variety of products, and a friendly experience every time you visit.",
+      "We're proud to be local, grateful to be part of Kelowna, and excited to serve the community that has supported us along the way.",
     ],
     closing:
       "Thank you for choosing local and for being part of The Packing House community.",

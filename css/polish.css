@@ -553,7 +553,7 @@ body {
   background-clip: text;
 }
 
-.current-flyer {
+.current-flyer:not(.current-flyer--featured) {
   border-color: rgba(245, 197, 24, 0.2) !important;
   border-radius: var(--radius-xl) !important;
 }

@@ -1,14 +1,9 @@
 MONTHLY FLYER
 
-Only the current month's flyer is shown on the site.
+When ready to publish a flyer:
+1. Save image to images/flyers/ (e.g. 2026-08-august.jpg)
+2. In config.js set flyerComingSoon: false
+3. Add the path to monthlyFlyers:
+   monthlyFlyers: ["images/flyers/2026-08-august.jpg"],
 
-STEP 1 — Save your flyer image:
-  images/flyers/2026-08-august.jpg
-  (use YYYY-MM-monthname.jpg)
-
-STEP 2 — Set it in config.js (replace the old path each month):
-  monthlyFlyers: [
-    "images/flyers/2026-08-august.jpg",
-  ],
-
-When a new month starts, swap the image file and update that one line.
+While flyerComingSoon is true, the site shows "Coming Soon".

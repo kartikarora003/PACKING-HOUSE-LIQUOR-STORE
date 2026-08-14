@@ -370,7 +370,15 @@ iframe {
   }
 
   .current-flyer {
-    padding: 1.25rem;
+    padding: 0.75rem;
+  }
+
+  .current-flyer--featured {
+    padding: 0;
+  }
+
+  .current-flyer__image-wrap--large {
+    border-radius: var(--radius);
   }
 
   .photo-strip__item {
@@ -512,8 +520,16 @@ iframe {
     order: 3;
   }
 
-  .cashback-prompt {
-    flex-direction: column;
-    gap: 0.75rem;
+  .flyer-coming-soon {
+    min-height: 50vh;
+    padding: 3rem 1.25rem;
   }
-}
+
+  .flyer-coming-soon__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .flyer-coming-soon__actions .btn {
+    width: 100%;
+  }

@@ -161,9 +161,9 @@ const STORE = {
     facebookHandle: "@packinghouseliquorstore",
   },
 
-  monthlyFlyers: [
-    "images/flyers/2026-08-august.jpg",
-  ],
+  flyerComingSoon: true,
+
+  monthlyFlyers: [],
 
   // Store photos in images/store/
   storefront: "images/store/storefront.jpg",
